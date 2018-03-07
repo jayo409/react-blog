@@ -1,0 +1,14 @@
+@import '../../Global.scss';
+
+.music-upload{
+	border-bottom: 1px dotted #ccc;padding-bottom: 20px;position: relative;
+	.cover-uploader{
+		@include WH( 100px );
+		img{
+			@include WH( 100px );
+		}
+	}
+	.music-upload-btn{
+		position: absolute;right: 20px;bottom: 0px;
+	}
+}

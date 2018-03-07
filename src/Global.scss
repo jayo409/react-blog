@@ -1,0 +1,26 @@
+@import '~antd/dist/antd.css';
+*, ul, a, i{
+	padding: 0;margin: 0;
+}
+input, button{
+	border: none;outline:none;
+}
+a{text-decoration: none;}
+li{
+	list-style: none;
+}
+button{
+	cursor: pointer;
+}
+@mixin WH( $w, $h: $w ){
+	width: $w;height: $h;
+}
+@mixin ts( $time: .5s, $m: ease, $s: all, $delay: 0s ){
+	transition: $s $time $m $delay;
+}
+@mixin Sp( $fz, $c, $lh: $fz, $a: center ){
+	font-size: $fz;color: $c;line-height: $lh;text-align: $a;
+}
+#root{
+	@include WH( 100% );
+}

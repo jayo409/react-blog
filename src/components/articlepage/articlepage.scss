@@ -1,0 +1,23 @@
+@import '../../Global.scss';
+
+.container-article{
+	@include WH( 80%, auto );position: absolute;right: 10%;top: 5%;background: #f5f5dc url(../../static/images/wrap-bg.png);box-sizing: border-box;padding: 40px;min-height: 90%;
+	.article-title{
+		@include Sp( 28px, #973444 );display: block;@include WH( 100%, 40px);
+	}
+	.article-date{
+		@include Sp( 12px, rgba( 0,0,0,0.65) );display: block;@include WH( 100%, 20px);
+	}
+	.article-body{
+		display: block;margin-top: 30px;
+		pre{
+			background-color: #363532;box-sizing: border-sizing;padding: 20px;border-radius: 20px;@include WH( auto, auto);
+			div{
+				@include WH( auto );
+			}
+			code{
+				color: #c03f3c;
+			}
+		}
+	}
+}

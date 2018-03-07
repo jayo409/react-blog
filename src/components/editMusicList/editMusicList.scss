@@ -1,0 +1,16 @@
+@import '../../Global.scss';
+
+.edit-music-list{
+	.edit-music-item{
+		@include WH( 100%, 150px );display: flex;padding: 20px 0;position: relative;border-bottom: 1px dotted #ccc;
+		.edit-music-col{
+			display: flex;flex-flow: column nowrap;justify-content: space-between;margin-right: 130px;width: 150px;
+		}
+		img{
+			@include WH(100px)
+		}
+		.edit-music-btn{
+			position: absolute;right: 20px;bottom: 10px;
+		}
+	}
+}

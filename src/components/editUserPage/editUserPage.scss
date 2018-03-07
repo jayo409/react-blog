@@ -1,0 +1,45 @@
+@import '../../Global.scss';
+
+.avatar-edit{
+	border-bottom: 1px dotted #ccc;padding-bottom: 30px;
+	.avatar-edit-content{
+		margin-top: 30px;display: flex;align-items: center;position: relative;
+		.avatar-edit-default{
+			@include WH( 110px );
+		}
+		.avatar-uploader > .ant-upload {
+			@include WH( 110px );margin: 0;margin-left: 30px;
+			img{
+				@include WH( 110px, 110px );
+			}
+		}
+		.edit-btn{
+			position: absolute;right: 20px;bottom: 0px; 
+		}
+	}	
+}
+.username-edit{
+	border-bottom: 1px dotted #ccc;padding-bottom: 30px;margin: 20px 0;
+	.username-edit-content{
+		margin-top: 30px;display: flex;align-items: center;position: relative;
+		.username-edit-input{
+			width: 200px;
+		}
+		.edit-btn{
+			position: absolute;right: 20px;bottom: 0px; 
+		}
+	}
+
+}
+.password-edit{
+	border-bottom: 1px dotted #ccc;padding-bottom: 30px;margin: 20px 0;
+	.password-edit-content{
+		margin-top: 30px;display: flex;align-items: center;position: relative;
+		.password-edit-input{
+			width: 200px;
+		}
+		.edit-btn{
+			position: absolute;right: 20px;bottom: 0px; 
+		}
+	}
+}

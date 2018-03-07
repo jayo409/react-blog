@@ -1,0 +1,14 @@
+@import '../../Global.scss';
+
+.blog-bg{
+    @include WH(100%);background: #363532 url(../../static/images/blog-bg.png);position: fixed;left: 0;top: 0;
+}
+.container-blog{
+    @include WH( 80%, auto );position: absolute;right: 10%;top: 5%;background: #f5f5dc url(../../static/images/wrap-bg.png);box-sizing: border-box;padding: 40px;display: flex;justify-content: space-between;min-height: 90%;
+    .container-left{
+        @include WH( 70%, 100% );
+    }
+    .container-right{
+        @include WH( 20%, 100% );
+    }
+}

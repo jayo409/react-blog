@@ -1,0 +1,11 @@
+@import '../../Global.scss';
+
+.categoryList{
+	margin-top: 50px;@include WH( 100%, auto );
+	li{
+		margin-top: 10px;cursor: pointer;text-align: center;@include WH( 50%, 30px );float: left;
+		&.ac{
+			color: #973444;
+		}
+	}
+}

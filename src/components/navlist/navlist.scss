@@ -1,0 +1,23 @@
+@import '../../Global.scss';
+
+.navlist{
+    position: fixed;@include WH( 50px, 90% );left: 0;top: 5%;background: #f2de76;
+    .navlink{
+        display: block;@include WH( 100%, 70px );font-size: 25px;text-align: center;line-height: 60px;color: #363532;position: relative;@include ts;background: #f2de76;margin-top: 3px;;
+        span{
+            @include Sp( 14px, #973444 );position: absolute;@include ts;@include WH( 100%, 16px );left: 0;bottom: 20px;opacity: 0; 
+        }
+        &:hover{
+            color: #973444;box-shadow: 3px 0 3px #363632;width: 70px;
+            span{
+                bottom: 5px;opacity: 1;
+            }
+        }
+        &.ac{
+            color: #973444;box-shadow: 3px 0 3px #363632;width: 70px;
+            span{
+                bottom: 5px;opacity: 1;
+            }
+        }
+    }
+}

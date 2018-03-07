@@ -1,0 +1,5 @@
+@import '../../Global.scss';
+
+.wrap{
+	@include WH( 100% );background: #363532 url(../../static/images/wrap-bg.png) repeat;min-width: 1300px;min-height: 600px;
+}

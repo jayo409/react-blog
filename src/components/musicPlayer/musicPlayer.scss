@@ -1,0 +1,79 @@
+@import '../../Global.scss';
+
+@keyframes rotate
+{
+    0% {transform: rotate(0);}
+    100% {transform: rotate(360deg);}
+}
+.container-music{
+	i,a,li,div{
+		font-family: 'KaiTi';
+	}
+	@include WH( 80%, 90% );position: absolute;right: 10%;top: 5%;display: flex;justify-content: center;align-items: center;
+	.music-player{
+		@include WH( 600px, 300px );display: flex;justify-content: space-between;position: relative;flex-flow: column nowrap;
+		.music-avatar{
+			@include WH(120px);border-radius: 50%;position: absolute;top: 0;right: 0;animation: rotate 10s linear infinite paused;z-index: 1;display: block;
+			&.rotate{
+				animation-play-state: running;
+			}
+		}
+		.music-title{
+			font-size: 36px;color: #e7e5d0;font-weight: bold;text-indent: 30px;
+		}
+		.music-author{
+			font-size: 18px;color: #e7e5d0;
+		}
+		.music-current{
+			font-size: 14px;color: #e7e5d0;
+		}
+		.music-row{
+			display: flex;align-items: center;
+		}
+		.music-volume{
+			@include WH( 150px, 30px);margin-left: 25px;display: flex;
+			i{
+				font-size: 30px;color: #e7e5d0;@include ts;line-height: 30px;cursor: pointer;
+			}
+			input[type="range"] {
+				-webkit-appearance: none;margin-top: 13px;margin-left: 10px;background-color: #e7e5d0;width: 100px;height:4px;padding: 0;border: none;cursor: pointer;border-radius: 5px;@include ts;
+			}
+			input[type="range"]::-webkit-slider-thumb {
+				-webkit-appearance: none;cursor: default;top: 0;@include WH( 10px ); transform: translateY(0px);background: #973444;border-radius: 50%;cursor: pointer;
+			}
+		}
+		.music-time{
+			-webkit-appearance: none;background-color: #e7e5d0;width: 100%;height:6px;padding: 0;border: none;cursor: pointer;border-radius: 5px;
+		}
+		.music-time::-webkit-slider-thumb {
+			-webkit-appearance: none;cursor: default;top: 0;@include WH( 15px ); transform: translateY(0px);background: #973444;border-radius: 50%;cursor: pointer;
+		}
+		.music-playbtn, .music-lbtn, .music-rbtn{
+			@include WH( 40px );border-radius: 50%;cursor: pointer;margin-right: 30px;
+			i{
+				font-size: 40px;@include ts;color: #fffafa;
+				&:hover{
+					color: #973444;
+				}
+			}
+		}
+	}
+	.music-list{
+		@include WH( 150px, 300px);margin-left: 50px;
+		.music-list-top{
+			@include WH( 100%, 30px );color: #fffafa;margin-bottom: 15px;
+		}
+		.music-item{
+			@include WH( 100%, 30px );display: flex;justify-content: space-between;cursor: pointer;
+			span{
+				color: #fffafa;@include ts;
+			}			
+			&:hover{
+				span{
+					color: #973444;
+				}
+			}
+
+		}
+	}
+}

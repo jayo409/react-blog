@@ -1,0 +1,22 @@
+@import '../../Global.scss';
+
+.articlelist{
+	@include WH(100%, auto);
+	.articlelist-item{
+		@include WH( 100%, 110px );margin-bottom: 20px;border-bottom: 1px solid #ccc;
+		.articlelist-title{
+			@include Sp( 20px, rgba(0,0,0,0.65), 20px, left );@include WH(100%, 20px);@include ts;
+			&:hover{
+				color: #973444;
+			}
+		}
+		.articlelist-abstract{
+			@include Sp( 14px, rgba( 0,0,0,0.65 ), 22px, left );@include WH( 100%, 52px );margin-top: 5px;
+		}
+		.articlelist-bot{
+			display: flex;justify-content: space-between;
+			
+		}
+	}
+
+}

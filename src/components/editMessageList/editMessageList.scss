@@ -1,0 +1,11 @@
+@import '../../Global.scss';
+
+.edit-message{
+	@include WH( 100%, auto );
+	li{
+		@include WH( 100%, 100px );border-bottom: 1px dotted rgba(0,0,0,0.65);display: flex;justify-content: space-between;align-items: flex-end;padding: 10px 0;
+		.edit-message-item{
+			display: flex;flex-flow: column nowrap;justify-content: space-between;
+		}
+	}
+}

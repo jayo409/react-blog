@@ -1,0 +1,11 @@
+@import '../../Global.scss';
+
+.userinfo{
+	display: flex;flex-flow: column nowrap;align-items: center;
+	img{
+		@include WH( 120px );
+	}
+	span{
+		display: block;margin-top: 20px;
+	}
+}

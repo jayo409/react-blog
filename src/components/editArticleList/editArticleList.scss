@@ -1,0 +1,11 @@
+@import '../../Global.scss';
+
+.edit-article-list{
+	@include WH( 100%, auto );
+	.edit-article-item{
+		display: flex;justify-content: space-between;border-bottom: 1px dotted #ccc;@include WH( 100%, 50px );align-items: center;
+		.edit-article-title{
+			@include Sp( 16px, rgba(0,0,0,0.65), 50px, left );@include WH( 70%, 100% );
+		}
+	}
+}

@@ -1,0 +1,5 @@
+@import '../../Global.scss';
+
+.container-message{
+    @include WH( 80%, auto );position: absolute;right: 10%;top: 5%;background: #f5f5dc url(../../static/images/wrap-bg.png);box-sizing: border-box;padding: 40px;display: flex;min-height: 90%;flex-flow: column nowrap;justify-content: space-between;
+}

@@ -1,0 +1,36 @@
+@import '../../Global.scss';
+
+@mixin input{
+	border: 1px solid #37444b;border-radius: 5px;@include ts;box-sizing: border-box;padding-left: 20px;
+	&:hover{
+		border: 1px solid #3f3f3c;box-shadow: 1px 1px 2px #3f3f3c;
+	}
+	&:focus{
+		border: 1px solid #973444;
+	}
+}
+
+.message-post{
+	@include WH( 100%, auto );display: flex;align-items: flex-end;margin-top: 150px;
+	.message-edit{
+		@include WH( 50%, auto );display: flex;flex-flow: column nowrap;
+		.message-username{
+			@include WH( 100%, 35px );display: flex;justify-content: space-between;margin-bottom: 20px;
+			input{
+				@include input;@include WH( 60%, 35px);
+			}
+		}
+		.message-contact{
+			@include WH( 100%, 35px );display: flex;justify-content: space-between;margin-bottom: 20px;
+			input{
+				@include input;@include WH( 60%, 35px);
+			}
+		}
+		.message-content{
+			@include WH( 100%, 200px );@include input;padding: 20px;
+		}	
+	}
+	.message-btn{
+		@include WH( 60px, 30px );color: #fffafa;background: #973444;border-radius: 8px;margin-left: 30px;
+	}
+}

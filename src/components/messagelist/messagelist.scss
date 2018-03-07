@@ -1,0 +1,14 @@
+@import '../../Global.scss';
+
+.message-list{
+	@include WH( 100%, auto );
+	li{
+		@include WH( 100%, 80px );display: flex;flex-flow: column nowrap;border-bottom: 1px dotted rgba(0,0,0,0.65);margin-bottom: 30px;
+		p{
+			@include WH( 100%, 40px );
+		}
+		div{
+			@include WH( 100%, 40px );display: flex;justify-content: space-between;
+		}
+	}
+}

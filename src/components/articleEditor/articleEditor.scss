@@ -1,0 +1,11 @@
+@import '../../Global.scss';
+
+.article-editor{
+	@include WH( 100% );
+	.article-category{
+		width: 100%;
+	}
+	.braft-editor{
+		@include WH(100%, 650px);background-color: #FFF;margin-top: 20px;border: 1px solid #ccc;border-radius: 10px;
+	}
+}

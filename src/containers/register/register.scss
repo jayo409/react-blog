@@ -1,0 +1,29 @@
+@import '../../Global.scss';
+
+.container-register{
+	@include WH(100%);display: flex;justify-content: center;align-items: center;
+}
+.register{
+	@include WH( 280px, 300px );display: flex;flex-flow: column wrap;justify-content: space-around;align-items: center;position: relative;
+	.register-input{
+		@include WH( 100%, 50px );@include ts( .5s );@include Sp( 16px, #fff, 50px );background: #363532;border: 1px solid #f2de76;
+		&::-webkit-input-placeholder{
+			color: #fff;
+		}
+		&:hover{
+			box-shadow:  0 0 2px 2px #241f1f inset;
+		}
+		&:focus{
+			box-shadow:  0 0 2px 2px #241f1f;
+		}
+	}
+	.register-msg{
+		position: absolute;color: #fe2b2b;@include WH( 280px, 20px );top: -10%;left: 0;@include Sp( 14px, #fff, 20px );@include ts( .3s );
+	}
+	.register-btn{
+		@include WH( 240px, 40px );display: flex;justify-content: space-between;
+		button{
+			@include ts( .5s );@include Sp( 16px, #fff, 40px );border-radius: 8px;background: #363532;
+		}
+	}
+}
