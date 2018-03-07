@@ -24,3 +24,9 @@ npm i
 
 界面展示
 ------
+![Alt text](https://github.com/jayo409/react-blog/blob/master/images/1.png)
+![Alt text](https://github.com/jayo409/react-blog/blob/master/images/2.png)
+![Alt text](https://github.com/jayo409/react-blog/blob/master/images/3.png)
+![Alt text](https://github.com/jayo409/react-blog/blob/master/images/4.png)
+![Alt text](https://github.com/jayo409/react-blog/blob/master/images/5.png)
+![Alt text](https://github.com/jayo409/react-blog/blob/master/images/6.png)
