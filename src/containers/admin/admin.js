@@ -2,9 +2,9 @@ import React from 'react';
 import { withRouter, Switch, Route, Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { Layout, Menu, Icon, Avatar } from 'antd';
+import axios from 'axios';
 
 import { getUserInfo } from '../../actions/actions';
-import AuthRoute from '../../components/authRoute/authRoute';
 import PostArticle from './subpage/postArticle';
 import EditArticle from './subpage/editArticle';
 import EditUser from './subpage/editUser';
@@ -27,14 +27,21 @@ class Admin extends React.Component {
 	}
 
 	componentWillMount() {
+		axios.get('/user/info')
+			.then(res =>{
+				if( res.status === 200 && res.data.code === 0){
+						return null
+				} else {
+						this.props.history.push('/signin')
+					}
+				}
+			)
 		this.props.getUserInfo();
 	}
 
 	render() {
 		const location = this.props.location.pathname;
 		return (
-			[
-			<AuthRoute key='authRoute'/>,
 			<Layout style={{ minHeight: '100vh' }} key='layout'>
 				<Sider
           			trigger={null}
@@ -105,7 +112,7 @@ class Admin extends React.Component {
 					</Content>
 				</Layout>
 			</Layout>
-			]
+			
 		);
 	}
 }
